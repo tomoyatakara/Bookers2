@@ -1,5 +1,7 @@
 <h1>User info</h1>
-
+<% if @user.errors.any? %>
+<h2>errors</h2>
+<% end %>
 <%= form_for(@user) do |f| %>
 <h4>name</h4>
 <%= f.text_field :name %>

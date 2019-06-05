@@ -8,5 +8,7 @@ Rails.application.routes.draw do
 
   root to: 'users#log'
 
-  get 'about' =>'books#about'
+  get 'home/about' =>'books#about'
+
+  get 'detail' =>'books#detail'
 end
